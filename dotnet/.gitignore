@@ -1,0 +1,49 @@
+# Ignore build outputs
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# Ignore test results and reports
+TestResults/
+Reports/
+*.trx
+*.html
+*.log
+
+# Ignore screenshots and videos
+Screenshots/
+Videos/
+Logs/
+
+# Ignore user-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+
+# Ignore NuGet packages
+*.nupkg
+packages/
+.nuget/
+
+# Ignore Playwright cache
+.playwright/
+
+# Ignore OS specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore Rider settings
+.idea/
+
+# Keep directory structure
+!Reports/.gitkeep
+!Reports/Screenshots/.gitkeep
+!Reports/Videos/.gitkeep
+!Reports/Logs/.gitkeep

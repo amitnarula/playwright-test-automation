@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <!-- NUnit3 Test Adapter Settings -->
+  <NUnit>
+    <!-- Set to 0 for unlimited workers, or a specific number -->
+    <NumberOfTestWorkers>1</NumberOfTestWorkers>
+    
+    <!-- Controls the random seed used for shuffle and random order -->
+    <DefaultTestNamePattern>{m}{a}</DefaultTestNamePattern>
+    
+    <!-- Verbosity level: 0 = Off, 1 = Error, 2 = Warning, 3 = Info, 4 = Verbose -->
+    <Verbosity>3</Verbosity>
+    
+    <!-- Results directory -->
+    <ResultsDirectory>.\TestResults</ResultsDirectory>
+    
+    <!-- Work directory for test execution -->
+    <WorkDirectory>.\TestResults</WorkDirectory>
+  </NUnit>
+
+  <!-- Test Run Parameters -->
+  <TestRunParameters>
+    <Parameter name="Browser" value="chromium" />
+    <Parameter name="Headless" value="false" />
+    <Parameter name="BaseUrl" value="https://www.google.com" />
+  </TestRunParameters>
+
+  <!-- Logger Settings -->
+  <LoggerRunSettings>
+    <Loggers>
+      <Logger friendlyName="console" enabled="True">
+        <Configuration>
+          <Verbosity>normal</Verbosity>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="html" enabled="True">
+        <Configuration>
+          <LogFileName>TestResults.html</LogFileName>
+        </Configuration>
+      </Logger>
+      <Logger friendlyName="trx" enabled="True">
+        <Configuration>
+          <LogFileName>TestResults.trx</LogFileName>
+        </Configuration>
+      </Logger>
+    </Loggers>
+  </LoggerRunSettings>
+
+  <!-- Run Configuration -->
+  <RunConfiguration>
+    <!-- Maximum number of concurrent test sessions -->
+    <MaxCpuCount>1</MaxCpuCount>
+    
+    <!-- Path to Test Adapters -->
+    <TestAdaptersPaths>.</TestAdaptersPaths>
+    
+    <!-- Results Directory -->
+    <ResultsDirectory>.\TestResults</ResultsDirectory>
+    
+    <!-- Target Platform -->
+    <TargetPlatform>x64</TargetPlatform>
+    
+    <!-- Target Framework -->
+    <TargetFrameworkVersion>.NETCoreApp,Version=v3.1</TargetFrameworkVersion>
+    
+    <!-- Treat test adapter errors as warnings -->
+    <TreatTestAdapterErrorsAsWarnings>false</TreatTestAdapterErrorsAsWarnings>
+  </RunConfiguration>
+</RunSettings>
